@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="stylef.css">
+    <link rel="stylesheet" href="stayle.css">
+
+  </head>
+  <body class="details">
+    <div class="container">
+      <div class="navber">
+        <img src="Img\LL.png" class="logo">
+        <nav>
+  <ul id="menuList">
+    <li><a href="introF.html">Home</a></li>
+    <li><a href="mindmap.html">Generate Mindmap</a></li>
+    <li><a href="AboutUs.html">About Us</a></li>
+  </ul>
+        </nav>
+        <img src="Img\menu.png" class="menu-icon" onclick="togglemenu()">
+      </div>
+
+
+<!-- partial:index.partial.html -->
+<div class="custom-accordion">
+  <div class="item">
+    <div class="icon">1</div>
+    <div class="title">
+      <div class="text">History & backgraound.</div>
+    </div>
+    <div class="content">
+	2024/7/11<br>
+	</div>
+  </div>
+  <div class="item">
+    <div class="icon">2</div>
+    <div class="title">
+      <div class="text">Vision & Mission.</div>
+    </div>
+    <div class="content">
+Improving the Quality of Education
+<br><br><hr><br><br>
+help the people to make learn easier 	</div>
+  </div>
+  <div class="item">
+    <div class="icon">3</div>
+    <div class="title">
+      <div class="text">services & products.</div>
+    </div>
+    <div class="content">
+	have the ability to convert text directly into illustrated graphics or concept maps.
+	</div>
+  </div>
+  <div class="item">
+    <div class="icon">4</div>
+    <div class="title">
+      <div class="text">Your Suggestions.</div>
+    </div>
+      <div class="content">
+      <div class="social-links"><a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__hlp69BUNDVUVkJQREJIUEIzQkpIWkg2WE43Nlg5WC4u&rdd82a13fe0d84e64928b7f3c2c8de29d=%7B%7D"><img src="Img\sg.png" ></a>
+      </div>
+       enter your Suggestions here </div>
+  </div>
+
+  <div class="item">
+    <div class="icon">5</div>
+    <div class="title">LinkedLearn</div>
+    <div class="content">
+
+      <div class="heart-icon">&hearts;</div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var menuList = document.getElementById("menuList");
+  menuList.style.maxHeight = "0px";
+  function togglemenu(){
+    if (menuList.style.maxHeight == "0px"){
+      menuList.style.maxHeight = "130px";
+    }
+    else{
+      menuList.style.maxHeight = "0px";
+
+    }
+  }
+</script>
+</body>
+</html>

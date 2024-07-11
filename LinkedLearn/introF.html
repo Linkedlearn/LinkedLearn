@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LinkedLearn</title>
+<link rel="stylesheet" href="stayle.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="navber">
+      <img src="Img\LL.png" class="logo">
+      <nav>
+        <ul id="menuList">
+          <li><a href="introF.html">Home</a></li>
+          <li><a href="mindmap.html">Generate Mindmap</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
+        </ul>
+      </nav>
+      <img src="Img\menu.png" class="menu-icon" onclick="togglemenu()">
+    </div>
+
+    <div class="row">
+    <div class="col-1">
+    <h2>LinkedLearn</h2>
+    <h3>What is LinkedLearn?</h3>
+    <p>It is AI that Improves educational outcomes</p>
+    <h4> </h4>
+<style media="screen">
+  a{
+    text-decoration: none;
+                color: inherit;
+
+  }
+</style>
+
+    <button type="button" id="form-open"><a href="index.html">Start</a></button>
+    </div>
+    <div class="col-2">
+      <img src="Img\logo.png" class="controller">
+
+      <div class="color-box"></div>
+
+
+
+    </div>
+    </div>
+    <div class="social">
+
+    </div>
+    <div class="social-links">
+      <a href="https://github.com/Linkedlearn"><img src="Img\gethub.png" ></a>
+      <a href="mailto:Linkedlearnedu@gmail.com"><img src="Img\email.png"></a>
+      <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__hlp69BUNDVUVkJQREJIUEIzQkpIWkg2WE43Nlg5WC4u&rdd82a13fe0d84e64928b7f3c2c8de29d=%7B%7D"><img src="Img\sg.png" ></a>
+
+    </div>
+    </div>
+    <script>
+      var menuList = document.getElementById("menuList");
+      menuList.style.maxHeight = "0px";
+      function togglemenu(){
+        if (menuList.style.maxHeight == "0px"){
+          menuList.style.maxHeight = "130px";
+        }
+        else{
+          menuList.style.maxHeight = "0px";
+
+        }
+      }
+    </script>
+</body>
+</html>

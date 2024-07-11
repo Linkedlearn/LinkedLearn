@@ -1,0 +1,113 @@
+    
+<!DOCTYPE html>
+<html>
+<head>
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LinkedLearn</title>
+<link rel="stylesheet" href="stayle.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="navber">
+      <img src="Img\LL.png" class="logo">
+      <nav>
+        <ul id="menuList">
+          <li><a href="introF.html">Home</a></li>
+          <li><a href="mindmap.html">Generate Mindmap</a></li>
+          <li><a href="AboutUs.html">About Us</a></li>
+        </ul>
+      </nav>
+      <img src="Img\menu.png" class="menu-icon" onclick="togglemenu()">
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <p>Enter the text to encrypt</p>
+        <textarea class="form-control" rows="1" id="textArea"></textarea>
+        <br>
+        <a class="btn btn-success" id="encryptBtn" >Encrypt</a>
+      </div>
+    </div>
+
+    <div class="card" id="image1" style="width: 58%; height: auto;display: none;">
+      <img class="card-img-top" src="img/1.jpg">
+    </div>
+
+    <div class="card" id="image2" style="width: 50%; height: auto;display: none;">
+      <img class="card-img-top" src="img/2.jpg" alt="Card image cap">
+    </div>
+
+    <div class="card" id="image3" style="width: 50%; height: auto;display: none;">
+      <img class="card-img-top" src="img/3.jpg" >
+    </div>
+
+    <div class="card" id="image4" style="width: 60%; height: auto;display: none;">
+      <img class="card-img-top" src="img/4.jpg" >
+    </div>
+
+    <div class="card" id="image5" style="width: 50%; height: auto;display: none;">
+      <img class="card-img-top" src="img/5.jpg" >
+    </div>
+
+    <div class="social">
+
+    </div>
+    <div class="social-links">
+      <a href="https://github.com/Linkedlearn"><img src="Img\gethub.png" ></a>
+      <a href="mailto:Linkedlearnedu@gmail.com"><img src="Img\email.png"></a>
+      <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__hlp69BUNDVUVkJQREJIUEIzQkpIWkg2WE43Nlg5WC4u&rdd82a13fe0d84e64928b7f3c2c8de29d=%7B%7D"><img src="Img\sg.png" ></a>
+    </div>
+    </div>
+
+    <script>
+      document.getElementById('encryptBtn').addEventListener('click', function() {
+        var textArea = document.getElementById('textArea').value;
+        var lowerCaseTextArea = textArea.toLowerCase();
+    
+        // Check for sentences with any uppercase letters
+        if (lowerCaseTextArea.includes('the diffie-hellman algorithm is a process of exchanging secret keys in a secure way')) {
+          document.getElementById('image1').style.display = 'block';
+          document.getElementById('image2').style.display = 'none';
+          document.getElementById('image3').style.display = 'none';
+          document.getElementById('image4').style.display = 'none';
+          document.getElementById('image5').style.display = 'none';
+        } else if (lowerCaseTextArea.includes('hashing encrypts texts to protect them from hacking')) {
+          document.getElementById('image1').style.display = 'none';
+          document.getElementById('image2').style.display = 'block';
+          document.getElementById('image3').style.display = 'none';
+          document.getElementById('image4').style.display = 'none';
+          document.getElementById('image5').style.display = 'none';
+        } else if (lowerCaseTextArea.includes('programming is a way that enables humans to direct instructions to computers using a programming language')) {
+          document.getElementById('image1').style.display = 'none';
+          document.getElementById('image2').style.display = 'none';
+          document.getElementById('image3').style.display = 'block';
+          document.getElementById('image4').style.display = 'none';
+          document.getElementById('image5').style.display = 'none';
+        } else if (lowerCaseTextArea.includes('a database is a tool that collects and organizes information')) {
+          document.getElementById('image1').style.display = 'none';
+          document.getElementById('image2').style.display = 'none';
+          document.getElementById('image3').style.display = 'none';
+          document.getElementById('image4').style.display = 'block';
+          document.getElementById('image5').style.display = 'none';
+        } else if (lowerCaseTextArea.includes('cyber security protecting networks, devices and applications from electronic threats')) {
+          document.getElementById('image1').style.display = 'none';
+          document.getElementById('image2').style.display = 'none';
+          document.getElementById('image3').style.display = 'none';
+          document.getElementById('image4').style.display = 'none';
+          document.getElementById('image5').style.display = 'block';
+        } else {
+          alert("Incorrect text, try again!");
+          document.getElementById('image1').style.display = 'none';
+          document.getElementById('image2').style.display = 'none';
+          document.getElementById('image3').style.display = 'none';
+          document.getElementById('image4').style.display = 'none';
+          document.getElementById('image5').style.display = 'none';
+        }
+      });
+    </script> 
+</body>
+</html>
